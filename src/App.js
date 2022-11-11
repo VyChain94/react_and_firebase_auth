@@ -1,23 +1,33 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import { Container } from "react-bootstrap"
+import { Route, Routes } from "react-router-dom";
+import Signin from "./components/Signin"
+import Signup from "./components/Signup"
+import Survey from "./components/Survey"
+import { AuthContextProvider } from "./context/Context";
+import ProtectedRoute from "./components/ProtectedRoute";
 
+//why did I wrap all my routes with a provider?
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
+    <div>
+      <Container
+        className="d-flex align-items-center justify-content-center"
+        style={{minHeight: "100vh" }}
         >
-          Learn React
-        </a>
-      </header>
+          <AuthContextProvider>
+          <Routes>
+            <Route path="/" element={<Signin/>}/>
+            <Route path="/signup" element={<Signup/>}/>
+            <Route path="/survey"
+             element={
+              // can't go to survey page unless you are a user
+             <ProtectedRoute>
+             <Survey/>
+             </ProtectedRoute>}/>
+          </Routes>
+          </AuthContextProvider>
+      </Container>
     </div>
   );
 }
