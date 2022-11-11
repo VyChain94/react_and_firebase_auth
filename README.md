@@ -1,6 +1,6 @@
 # User Authentication with React Router & Firebase
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project is part of a larger up and coming project that I will be engineering that is an extension of one of my older repositories.
 
 ## Available Scripts
 
