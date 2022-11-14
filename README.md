@@ -1,70 +1,25 @@
 # User Authentication with React Router & Firebase
 
-This project is part of a larger up and coming project that I will be engineering that is an extension of one of my older repositories.
+This project feature is key for any project that desires to securley allow users to sign in to our app using one or more sign-in methods, specifically email address and password sign-in.
 
-## Available Scripts
+## Motivation
 
-In the project directory, you can run:
+The motivation for me to build such a feature has been motivated by my desire and passion to further increase my react and react-router-dom skills while implementing projects that I will be including in many of my projects from here on out that may include any sensitive dynamic input's from a user, or upon request from clients. 
 
-### `npm start`
+### Build Status
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+The build status of this project is 100% complete and comes along with comments in the code for myself or anybody else that wishes to build upon or understand this code in a simpler format. 
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Tech/ Libraries/ Frameworks used/.
 
-### `npm test`
+- Firebase authentication SDK for sign in, sign out, and log out capabilities.
+- React-router-dom v6, to navigate pages upon signing in signing up, and logging out.
+- Bootstrap for all the UI styling
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Features
 
-### `npm run build`
+The main feautre that was implemented in this project was protected routes, thanks to the react router dom library, this requires a user to be signed in to view specific pages. I also took advantage of React's context hook to allow the access of user details globally, with any React component that is wrapped in the provider.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### SDK reference
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+https://firebase.google.com/docs/auth/web/start
